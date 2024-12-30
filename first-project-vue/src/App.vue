@@ -9,6 +9,17 @@ import EscutaEvento from "./components/EscutaEvento.vue";
 import PropriedadesComputadas from "./components/PropriedadesComputadas.vue"
 import PropriedadesAssistidas from "./components/PropriedadesAssistidas.vue";
 import RenderizacaoCondicional from "./components/RenderizacaoCondicional.vue";
+import RenderizacaoListas from "./components/RenderizacaoListas.vue";
+
+const borracha = "borracha"
+const precoBorracha = 2.50
+
+const cachorrosDoJoao = [
+  {nome: "Totó", idade:2},
+  {nome: "Bento", idade:5},
+  {nome: "Naninha", idade:11}
+]
+
 </script>
 
 <template>
@@ -23,4 +34,5 @@ import RenderizacaoCondicional from "./components/RenderizacaoCondicional.vue";
   <PropriedadesComputadas/>
   <PropriedadesAssistidas/>
   <RenderizacaoCondicional nome="Mariana" :qtde-cachorros="2"/>
+  <RenderizacaoListas nome="João" :cachorros="cachorrosDoJoao"/>
 </template>
